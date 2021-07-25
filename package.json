@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url /goit-js-hw-10-food-service/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+
   },
   "repository": {
     "type": "git",
@@ -16,11 +19,12 @@
   "bugs": {
     "url": "https://github.com/DmytroMS/goit-js-hw-10-food-service/issues"
   },
-  "homepage": "https://github.com/DmytroMS/goit-js-hw-10-food-service#readme",
+  "homepage": "https://DmytroMS.github.io/goit-js-hw-10-food-service",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "parcel-plugin-handlebars-precompile": "^1.0.2"
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1"
   }
 }
