@@ -2304,7 +2304,7 @@ var templateFunction = _handlebars.default.template({
           "column": 25
         }
       }
-    })) != null ? stack1 : "") + "            </ul>\r\n        </div>\r\n\r\n        <button class=\"card__button button\">\r\n            <i class=\"material-icons button__icon\"> shopping_cart </i>\r\n            В корзину\r\n        </button>\r\n    </article>\r\n</li>";
+    })) != null ? stack1 : "") + "            </ul>\r\n        </div>\r\n        <button class=\"card__button button\">\r\n            <i class=\"material-icons button__icon\"> shopping_cart </i>\r\n            В корзину\r\n        </button>\r\n    </article>\r\n</li>";
   },
   "useData": true
 });
@@ -2356,7 +2356,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62970" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51427" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
