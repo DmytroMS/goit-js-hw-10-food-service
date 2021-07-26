@@ -19,12 +19,9 @@ function createMenuMarkUp(List) {
 
 menuRef.insertAdjacentHTML('afterbegin', createMenuMarkUp(menuList));
 
-    localStorage.getItem("Theme") === 'light-theme'
-  ? (checkBoxRef.checked = false)
-        : (checkBoxRef.checked = true);
-    bodyRef.classList.add(localStorage.getItem("Theme")); 
-
-
+//     localStorage.getItem("Theme") === 'light-theme'
+//   ? (checkBoxRef.checked = false)
+//         : (checkBoxRef.checked = true);
 
 
 // Change theme theme light
@@ -35,6 +32,7 @@ function onPressCheckBox(event) {
     if (localStorage.getItem("Theme") === "light-theme") {
         bodyRef.classList.remove(localStorage.getItem("Theme"));
         localStorage.clear();
+        checkBoxRef.checked = true;
         localStorage.setItem("Theme", "dark-theme");
       
         
@@ -42,6 +40,7 @@ function onPressCheckBox(event) {
     } else {
         bodyRef.classList.remove(localStorage.getItem("Theme"));
         localStorage.clear();
+        checkBoxRef.checked = false;
         localStorage.setItem("Theme", "light-theme");
         
     };
@@ -49,6 +48,10 @@ function onPressCheckBox(event) {
    
 }
 
+
+localStorage.getItem("Theme") === 'dark-theme'
+    ? (checkBoxRef.checked = true) : (checkBoxRef.checked = false);
+     bodyRef.classList.add(localStorage.getItem("Theme"));
 
 
 
