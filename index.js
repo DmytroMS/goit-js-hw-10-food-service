@@ -28,7 +28,7 @@ menuRef.insertAdjacentHTML('afterbegin', createMenuMarkUp(menuList));
 
 
 // Change theme theme light
-checkBoxRef.addEventListener('click', onPressCheckBox);
+checkBoxRef.addEventListener('change', onPressCheckBox);
 
 function onPressCheckBox(event) {
   
